@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+
+    <TextView
+    android:id="@+id/date_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.01"
+    android:gravity="center"
+    android:textSize="30sp"
+    android:layout_marginTop="25dp"
+    android:text="When are you planning to go ?"  
+    android:textColor="#FFFFFF"  />
+     
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
+    android:background="#000000" >    
+<CalendarView
+        android:id="@+id/calendar"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1" /> 
+        
+<!-- Bottom Button --> 
+   <LinearLayout
+    android:id="@+id/canlendar_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.9"
+    android:orientation="horizontal"
+    android:background="#B2B2A8"
+    >
+    <Button
+    android:id="@+id/validate_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="15sp"
+    android:text="Validate"
+    android:background="#00375C"/>
+    
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
